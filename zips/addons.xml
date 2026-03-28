@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+  <addon id="repository.vbrscrushtv" name="VbrsTv Repository" version="1.0.0" provider-name="Vbrscrushtv">
+
+  <extension point="xbmc.addon.repository" name="VbrsTv Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Vbrscrushtv/vbrstv/main/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Vbrscrushtv/vbrstv/main/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Vbrscrushtv/vbrstv/main/zips/</datadir>
+    </dir>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">VbrsTv Addon-Repository</summary>
+    <summary lang="en">VbrsTv Addon Repository</summary>
+    <description lang="de">Installiere VbrsTv-Addons direkt aus diesem Repository.</description>
+    <description lang="en">Install VbrsTv addons directly from this repository.</description>
+    <platform>all</platform>
+  </extension>
+
+</addon>
+  <addon id="plugin.program.addonexporter" name="Addon Exporter" version="2.0.0" provider-name="ChatGPT">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Addons als ZIP exportieren</summary>
+        <description>
+            Exportiert installierte Kodi-Addons inklusive Dependencies
+            als installierbare ZIP-Dateien.
+        </description>
+        <platform>all</platform>
+<assets>
+      <icon>resources/media/icon.png</icon>
+    </assets> 
+    </extension>
+
+</addon>
+  <addon id="plugin.program.cachecleaner" name="Simple Cache Cleaner" version="1.0.1" provider-name="VBRSTV">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<news>
+[v1.0.0] 
+- Optimiert für Android &amp; Fire Stick
+- DE/EN/IT Sprachunterstützung hinzugefügt
+- Speicherplatz-Anzeige integriert
+    </news>
+    <summary lang="en_GB">Clear Kodi cache easily</summary>
+    <summary lang="de_DE">Kodi Cache einfach leeren</summary>
+    <summary lang="it_IT">Pulisci facilmente la cache di Kodi</summary>
+    <platform>android</platform>
+<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+  </extension>
+</addon>
+  <addon id="plugin.program.vpnstarter" name="VPN Starter" version="1.0.15" provider-name="vrtv">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Lädt eine OVPN-Datei in den öffentlichen Download-Ordner und öffnet X-plore.</summary>
+        <description lang="de_DE">
+            Main + Option 2 + Option 3 VPN Downloader.
+            Speichert config.ovpn und auth.txt unter /storage/emulated/0/Download/Vpnstarter/
+            und startet anschließend X-plore.
+        </description>
+        <platform>android</platform>
+        <platform>firetv</platform>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+            <screenshot>resources/media/screenshot1.png</screenshot>
+            <screenshot>resources/media/screenshot2.png</screenshot>
+            <screenshot>resources/media/screenshot3.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+  <addon id="plugin.program.vpnstarterde" name="VPN Starter DE" version="1.0.13" provider-name="crusher">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Lädt eine OVPN-Datei in den öffentlichen Download-Ordner und öffnet eine externe App (Standard: X-plore Dateimanager).</summary>
+        <description lang="de_DE">Speichert config.ovpn und auth.txt unter /storage/emulated/0/Download/Vpnstarter/ und startet anschließend die konfigurierte Android-App.</description>
+        <platform>android</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot1.png</screenshot>
+            <screenshot>screenshot2.png</screenshot>
+            <screenshot>screenshot3.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+  <addon id="script.module.vbrs.tools" name="VBRS Tools Module" version="1.0.2" provider-name="VBRSTV">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.service" library="service.py"/>
+<extension point="xbmc.python.script" library="service.py">
+    <provides>executable</provides>
+</extension>
+
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Zentrale DNS &amp; Security Tools für VBRS Addons</summary>
+        <description lang="de_DE">Bietet DNS-over-HTTPS (Cloudflare, Google, Quad9) und VPN-Prüfungsfunktionen für CasaCinema und andere VBRSTV Addons.</description>
+        <summary lang="it_IT">Strumenti centrali DNS e sicurezza per addon VBRS</summary>
+        <description lang="it_IT">Fornisce DNS-over-HTTPS (Cloudflare, Google, Quad9) e funzioni di controllo VPN per CasaCinema e altri addon VBRSTV.</description>
+        <summary lang="en_GB">Central DNS &amp; Security Tools for VBRS Addons</summary>
+        <description lang="en_GB">Provides DNS-over-HTTPS (Cloudflare, Google, Quad9) and VPN check functions for CasaCinema and other VBRSTV addons.</description>
+        <language>de it en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+  <addon id="script.vbrstuning" name="VBRSTuning Tool" version="1.0.1" provider-name="VBRSTV">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Exklusive Puffer-Optimierung für FireStick</summary>
+        <description>Das offizielle VBRSTuning Tool zur Eliminierung von Buffering-Problemen. Optimiert den RAM-Cache speziell für Amazon FireTV Geräte.</description>
+        <platform>all</platform>
+                <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
