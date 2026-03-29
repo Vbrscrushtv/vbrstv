@@ -91,6 +91,7 @@ Manuelle Installation
 Geplant:
 
 - Vollständiges Kodi-Repository (Installation per URL)
+- https://github.com/Vbrscrushtv/vbrstv/tree/main/zips/repository.vbrscrushtv
 - Automatische Updates
 - Erweiterung um weitere Addons
 
