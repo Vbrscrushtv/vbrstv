@@ -19,13 +19,17 @@
   </extension>
 
 </addon>
-  <addon id="plugin.program.addonexporter" name="Addon Exporter" version="2.0.0" provider-name="ChatGPT">
+  <addon id="plugin.program.addonexporter"
+       name="Addon Exporter"
+       version="2.2.2"
+       provider-name="VBRSTV">
 
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
 
-    <extension point="xbmc.python.script" library="default.py">
+    <extension point="xbmc.python.script"
+               library="default.py">
         <provides>executable</provides>
     </extension>
 
